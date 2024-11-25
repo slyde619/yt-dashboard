@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Recreate</title>
+    <!-- Box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Page wrapper -->
+    <section class="dashboard-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo-wrapper">
+                <div class="menu-icon">
+                    <img src="./assets/menu.svg" alt="menu">
+                </div>
+                <div class="logo-container">
+                    <img src="./assets/youtubeLogo.svg" alt="logo">
+                    <span><sup>NG</sup></span>
+                </div>
+            </div>
+            <div class="search-wrapper">
+                <form class="form-container">
+                    <input type="text" id="search" class="search-input" placeholder="Search">
+                    <div class="search-icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </form>
+                <div class="mic-icon">
+                    <i class="fa-solid fa-microphone"></i>
+                </div>
+            </div>
+            <div class="header-right-item">
+                <div class="video-container">
+                    <i class='bx bx-video-plus'></i>
+                </div>
+                <div class="notification-container">
+                    <i class="fa-solid fa-bell"></i>
+                </div>
+                <div class="profile">
+                    <h3>0x</h3>
+                </div>
+            </div>
+        </header>
+        <!-- Main -->
+        <main class="content">
+            <!-- Sidebar -->
+            <aside class="sidebar-container">
+                <div class="sidebar-top sidebar">
+                    <div class="menu-item-container active-item">
+                        <div class="item-icon">
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+                        <div class="item">
+                            <p>Home</p>
+                        </div>
+                    </div>
+                    <div class="menu-item-container">
+                        <div class="item-icon img-container">
+                            <img src="./assets/shorts.svg" alt="youtube shorts icon">
+                        </div>
+                        <div class="item">
+                            <p>Short</p>
+                        </div>
+                    </div>
+                    <div class="menu-item-container">
+                        <div class="item-icon img-container">
+                            <img src="./assets/videolist.svg" alt="youtube videolist">
+                        </div>
+                        <div class="item">
+                            <p>Subscriptions</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sidebar Profile -->
+                <div class="sidebar-profile sidebar">
+                    <div class="content-header">
+                        <div>
+                            <h2>You</h2>
+                        </div>
+                        <div class="profile-content-icon">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+                    <div class="menu-item-container">
+                        <div class="item-icon img-container">
+                            <img src="./assets/clock-rorate.svg" alt="clock rotate">
+                        </div>
+                        <div class="item">
+                            <p>History</p>
+                        </div>
+                    </div>
+                    <div class="menu-item-container">
+                        <div class="item-icon">
+                            <i class='bx bx-list-plus box-list'></i>
+                        </div>
+                        <div class="item">
+                            <p>Playlists</p>
+                        </div>
+                    </div>
+                    <div class="menu-item-container">
+                        <div class="item-icon">
+                            <i class="fa-regular fa-clock"></i>
+                        </div>
+                        <div class="item">
+                            <p>Watch later</p>
+                        </div>
+                    </div>
+                    <div class="menu-item-container">
+                        <div class="item-icon">
+                            <i class="fa-solid fa-thumbs-up"></i>
+                        </div>
+                        <div class="item">
+                            <p>liked videos</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sidebar explore -->
+                <div class="sidebar-explore sidebar">
+                    <div class="content-header">
+                        <h3 class="explore-title">Explore</h3>
+                    </div>
+                    <div class="menu-item-container">
+                        <div class="item-icon img-container">
+                            <img src="./assets/fire.svg" alt="trending fire">
+                        </div>
+                        <div class="item">
+                            <p>Trending</p>
+                        </div>
+                    </div>
+                    <div class="menu-item-container">
+                        <div class="item-icon">
+                            <i class="fa-solid fa-music"></i>
+                        </div>
+                        <div class="item">
+                            <p>Music</p>
+                        </div>
+                    </div>
+                    <div class="menu-item-container">
+                        <div class="item-icon img-container">
+                            <img src="./assets/gamepad.svg" alt="gamepad">
+                            
+                        </div>
+                        <div class="item">
+                            <p>Gaming</p>
+                        </div>
+                    </div>
+                    <div class="menu-item-container">
+                        <div class="item-icon img-container">
+                            <img src="./assets/newspaper.svg" alt="newspaper">
+                        </div>
+                        <div class="item">
+                            <p>News</p>
+                        </div>
+                    </div>
+                    <div class="menu-item-container">
+                        <div class="item-icon">
+                            <i class="fa-solid fa-trophy"></i>
+                        </div>
+                        <div class="item">
+                            <p>Sport</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- More From Youtube -->
+                <div class="sidebar-more sidebar">
+                    <div class="content-header">
+                        <h3 class="explore-title">More from YouTube</h3>
+                    </div>
+                    <div class="menu-item-container">
+                        <div class="item-icon img-container">
+                            <img src="./assets/fire.svg" alt="trending fire">
+                        </div>
+                        <div class="item">
+                            <p>Trending</p>
+                        </div>
+                    </div>
+                    <div class="menu-item-container">
+                        <div class="item-icon">
+                            <i class="fa-solid fa-music"></i>
+                        </div>
+                        <div class="item">
+                            <p>Music</p>
+                        </div>
+                    </div>
+                    <div class="menu-item-container">
+                        <div class="item-icon img-container">
+                            <img src="./assets/gamepad.svg" alt="gamepad">
+                            
+                        </div>
+                        <div class="item">
+                            <p>Gaming</p>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <!--Playlist -->
+            <section class="playlist-container">
+                <div class="filter-wrapper">
+                    <div class="button-containers">
+                        <button class="btn btn-active">All</button>
+                        <button class="btn">Music</button>
+                        <button class="btn">Gaming</button>
+                        <button class="btn">Podcasts</button>
+                        <button class="btn">nollywood</button>
+                        <button class="btn">martial arts movies</button>
+                        <button class="btn">chinese tevelesion dramas</button>
+                        <button class="btn">inventions</button>
+                        <button class="btn">action thrillers</button>
+                        <button class="btn">raggae</button>
+                        <button class="btn">christiano ronaldo</button>
+                    </div>
+                    <div class="fade-effect">
+                        <button class="arrow-btn">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="top-playlist">
+                    <div class="playlist-cards">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="./assets/images/thumbnail1.jpg" alt="Thumbnail">
+                            </div>
+                            <div class="playlist-contents">
+                                <div class="author">
+                                    <img src="./assets/avatar.svg" alt="profile avatar">
+                                </div>
+                                <div class="playlist-title">
+                                    <div class="playlist-heading">
+                                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                                    </div>
+                                    <div class="sponsored-post">
+                                        <p class="tag">Sponsored</p>
+                                        <div class="dot"></div>
+                                        <h4>MPower Financing</h4>
+                                    </div>
+                                    <div class="sponsored-buttons">
+                                        <div>
+                                            <button class="btn-lg btn-watch">Watch</button>
+                                        </div>
+                                        <div>
+                                            <button class=" btn-lg btn-apply">Apply Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="playlist-more">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="https://placehold.co/300x170" alt="Thumbnail">
+                                <div class="duration">
+                                    <p>12:40:01</p>
+                                </div>
+                            </div>
+                            <div class="playlist-contents">
+                                <div class="author">
+                                    <img src="./assets/avatar.svg" alt="profile avatar">
+                                </div>
+                                <div class="playlist-title">
+                                    <div class="playlist-heading">
+                                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                                    </div>
+                                    <div class="playlist-info">
+                                        <div class="playlist-channel">
+                                            <p>officer woos</p>
+                                        </div>
+                                        <div class="playlist-views">
+                                            <h4>5M</h4>
+                                            <div class="dot"></div>
+                                            <p>11 months ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="playlist-more">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="./assets/images/thumbnail1.jpg" alt="Thumbnail">
+                                <div class="duration">
+                                    <p>12:40:01</p>
+                                </div>
+                            </div>
+                            <div class="playlist-contents">
+                                <div class="author">
+                                    <img src="./assets/avatar.svg" alt="profile avatar">
+                                </div>
+                                <div class="playlist-title">
+                                    <div class="playlist-heading">
+                                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                                    </div>
+                                    <div class="playlist-info">
+                                        <div class="playlist-channel">
+                                            <p>officer woos</p>
+                                        </div>
+                                        <div class="playlist-views">
+                                            <h4>5M</h4>
+                                            <div class="dot"></div>
+                                            <p>11 months ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="playlist-more">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Next playlist -->
+                    <div class="playlist-cards">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="https://placehold.co/300x170" alt="Thumbnail">
+                                <div class="duration">
+                                    <p>12:40:01</p>
+                                </div>
+                            </div>
+                            <div class="playlist-contents">
+                                <div class="author">
+                                    <img src="./assets/avatar.svg" alt="profile avatar">
+                                </div>
+                                <div class="playlist-title">
+                                    <div class="playlist-heading">
+                                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                                    </div>
+                                    <div class="playlist-info">
+                                        <div class="playlist-channel">
+                                            <p>officer woos</p>
+                                        </div>
+                                        <div class="playlist-views">
+                                            <h4>5M</h4>
+                                            <div class="dot"></div>
+                                            <p>11 months ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="playlist-more">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="https://placehold.co/300x170" alt="Thumbnail">
+                                <div class="duration">
+                                    <p>12:40:01</p>
+                                </div>
+                            </div>
+                            <div class="playlist-contents">
+                                <div class="author">
+                                    <img src="./assets/avatar.svg" alt="profile avatar">
+                                </div>
+                                <div class="playlist-title">
+                                    <div class="playlist-heading">
+                                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                                    </div>
+                                    <div class="playlist-info">
+                                        <div class="playlist-channel">
+                                            <p>officer woos</p>
+                                        </div>
+                                        <div class="playlist-views">
+                                            <h4>5M</h4>
+                                            <div class="dot"></div>
+                                            <p>11 months ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="playlist-more">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="https://placehold.co/300x170" alt="Thumbnail">
+                                <div class="duration">
+                                    <p>12:40:01</p>
+                                </div>
+                            </div>
+                            <div class="playlist-contents">
+                                <div class="author">
+                                    <img src="./assets/avatar.svg" alt="profile avatar">
+                                </div>
+                                <div class="playlist-title">
+                                    <div class="playlist-heading">
+                                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                                    </div>
+                                    <div class="playlist-info">
+                                        <div class="playlist-channel">
+                                            <p>officer woos</p>
+                                        </div>
+                                        <div class="playlist-views">
+                                            <h4>5M</h4>
+                                            <div class="dot"></div>
+                                            <p>11 months ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="playlist-more">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </section>
+</body>
+</html>
